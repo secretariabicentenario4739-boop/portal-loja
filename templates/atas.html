@@ -1,0 +1,10 @@
+<h2>Atas das Sessões</h2>
+
+<ul>
+{% for ata in atas %}
+<li>
+{{ata[1]}} - {{ata[2]}}
+<a href="/atas/{{ata[3]}}">Baixar</a>
+</li>
+{% endfor %}
+</ul>
